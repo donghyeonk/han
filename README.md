@@ -1,6 +1,10 @@
 # HAN
 TensorFlow implementation of [Z. Hu et al. "Listening to Chaotic Whispers: A Deep Learning Framework for News-oriented Stock Trend Prediction", WSDM 2018](https://arxiv.org/abs/1712.02136)
 
+* Main components
+    * TensorFlow 1.4.0
+    * Numpy
+    * Scikit-learn
 * Dataset
     * Stock prices and tweets
         * [Yumo Xu and Shay B. Cohen "Stock Movement Prediction from Tweets and Historical Prices", ACL 2018.](https://aclweb.org/anthology/papers/P/P18/P18-1183/) 
