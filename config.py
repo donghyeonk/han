@@ -1,10 +1,5 @@
 import argparse
 import socket
-import tensorflow as tf
-
-
-print('tf ver.      ', tf.version.VERSION)
-print('tf.keras ver.', tf.keras.__version__)
 
 argparser = argparse.ArgumentParser()
 
@@ -18,7 +13,7 @@ argparser.add_argument("--pickle_path", type=str,
                        default='data/sp500glove.pkl')
 argparser.add_argument("--model_dir", type=str, default='checkpoints/')
 argparser.add_argument("--output_dir", type=str, default='summaries/')
-argparser.add_argument("--learning_rate", type=float, default=1e-4)
+argparser.add_argument("--learning_rate", type=float, default=1e-3)
 argparser.add_argument("--batch_size", type=int, default=32)
 argparser.add_argument("--l2", type=float, default=1e-6)
 argparser.add_argument("--clip_norm", type=float, default=5.0)
@@ -40,6 +35,6 @@ argparser.add_argument("--seed", type=int, default=2019)
 argparser.add_argument("--host", type=str,
                        default=socket.gethostbyname(socket.getfqdn()))
 argparser.add_argument("--whitelist", type=list, default=[])
-argparser.add_argument("--random_search", type=int, default=1)
+argparser.add_argument("--random_search", type=int, default=0)
 
 args = argparser.parse_args()

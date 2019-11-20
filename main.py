@@ -135,7 +135,7 @@ def run(flags_obj):
     # optimizer = tf.train.AdamOptimizer(learning_rate=flags_obj.learning_rate)
     optimizer = AdamWeightDecayOptimizer(
         learning_rate=flags_obj.learning_rate,
-        weight_decay_rate=0.01,
+        weight_decay_rate=0.0,
         beta_1=0.9,
         beta_2=0.999,
         epsilon=1e-6,
@@ -213,6 +213,9 @@ def run(flags_obj):
 
 if __name__ == '__main__':
     import config
+
+    # print('tf ver.      ', tf.version.VERSION)
+    print('tf.keras ver.', tf.keras.__version__)
 
     if config.args.random_search == 1:
 

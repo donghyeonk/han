@@ -13,15 +13,19 @@ TensorFlow implementation of [Z. Hu et al. "Listening to Chaotic Whispers: A Dee
         * 87 stocks (S & P 500)
         * 31 Dec 2013 ~ 31 Dec 2015
 
+* Word Representation
+    * Download http://nlp.stanford.edu/data/glove.twitter.27B.zip
+    * Extract to data/
+    
 * Working directory setting
 ```
 $ export PYTHONPATH=$PYTHONPATH:$(pwd)
 ``` 
 
-* Word Representation
-    * Download http://nlp.stanford.edu/data/glove.twitter.27B.zip
-    * Extract to data/
-    
+## Experiment
+* Run dataset.py
+* Run main.py
+
 ## Future Reference
 
 * Word Representation

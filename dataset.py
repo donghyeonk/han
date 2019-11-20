@@ -702,9 +702,9 @@ if __name__ == '__main__':
         if not os.path.exists(os.path.dirname(conf.pickle_path)):
             os.mkdir(os.path.dirname(conf.pickle_path))
         sp500_dataset = SnP500Dataset(conf)
-        print('Save', conf.pickle_path)
         pickle.dump(sp500_dataset, open(conf.pickle_path, 'wb'),
                     protocol=pickle.HIGHEST_PROTOCOL)
+        print('Saved', conf.pickle_path)
 
     # import tensorflow as tf
     # tf.enable_eager_execution()
